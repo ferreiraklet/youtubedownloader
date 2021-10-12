@@ -71,7 +71,7 @@ def video(video):
 #print("Title:  ", youtube.title)
 
 def downloading_video():
-    print(f"""{c_ex}
+    print(f"""{cy_ex}
  _____                    _                 _ _
 (____ \                  | |               | (_)
  _   \ \ ___  _ _ _ ____ | | ___   ____  _ | |_ ____   ____
