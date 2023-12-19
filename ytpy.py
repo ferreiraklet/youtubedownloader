@@ -57,8 +57,7 @@ def video(video):
                 print(f"{a_ex}Downloading video{c_end} - [{cont}]  URL: {valor}")
                 youtube = YouTube(valor)
 
-                my_video = youtube.streams.get_highest_resolution()
-
+                my_video = youtube.streams.get_by_itag(251)
                 my_video.download()
             except Exception as e:
                 print(str(e))
@@ -74,7 +73,7 @@ def video(video):
 def downloading_video():
     print(f"""{cy_ex}
  _____                    _                 _ _
-(____ \                  | |               | (_)
+(____ \                  | |               | _)
  _   \ \ ___  _ _ _ ____ | | ___   ____  _ | |_ ____   ____
 | |   | / _ \| | | |  _ \| |/ _ \ / _  |/ || | |  _ \ / _  |
 | |__/ / |_| | | | | | | | | |_| ( ( | ( (_| | | | | ( ( | |
